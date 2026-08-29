@@ -3,6 +3,7 @@ from sqlalchemy.dialects.postgresql import UUID
 import uuid
 from datetime import datetime
 from app.database import Base
+
 class ScanResult(Base):
 __tablename__ = "scan_results"
 id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
