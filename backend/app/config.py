@@ -1,4 +1,8 @@
-from pydantic_settings import BaseSettings
+from pathlib import Path
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
 
 
 class Settings(BaseSettings):
@@ -9,8 +13,10 @@ class Settings(BaseSettings):
     REDIS_URL: str
     TOR_SOCKS_PROXY: str = ""
 
-    class Config:
-        env_file = ".env"
+    model_config = SettingsConfigDict(
+        env_file=BASE_DIR / ".env",
+        extra="ignore"
+    )
 
 
 settings = Settings()
