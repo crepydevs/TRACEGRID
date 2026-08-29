@@ -1,6 +1,6 @@
 # SIH26151 — How to Start, Stop, and Debug the App
 
-This is the day-to-day operations guide for running the project. Keep this open in a tab whenever you're working on the project — it covers the commands you'll use constantly.
+This is the day-to-day operations guide for running the project.
 
 Everything below assumes you are in the **project root** (`sih26151-darkweb-intel/`) unless stated otherwise. Run `pwd` first if you're ever unsure where you are.
 
@@ -299,7 +299,7 @@ SELECT * FROM actors LIMIT 10;
 
 ---
 
-## 8. Quick Reference Cheat Sheet
+## 8. Quick Reference  
 
 | Task | Command |
 |---|---|
@@ -326,5 +326,5 @@ SELECT * FROM actors LIMIT 10;
 - [ ] Backend docs load at `http://localhost:8000/docs`
 - [ ] `git status` doesn't show `.venv`, `node_modules`, or `.env` as untracked (means `.gitignore` is working)
 - [ ] Commit with a clear message describing what changed
-- [ ] `git push origin main`
-- [ ] Tell the team in chat what changed, so they know to `git pull` before their next session
+- [ ] `git push origin main (not main your current developnment branch teams) --nitin :->`
+ 
